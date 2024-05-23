@@ -6,7 +6,8 @@ import emirael from "../assets/emirael.jpg";
 export default function Hero() {
   return (
     <div
-      className="text-lg font-roboto bg-gradient-to-t from-orange-100
+      id="home"
+      className="text-lg font-roboto bg-gradient-to-t from-blue-50
 		 to-gray-50 h-[100vh] text-center tracking-wider"
     >
       <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
