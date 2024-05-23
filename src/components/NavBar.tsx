@@ -1,5 +1,6 @@
 import {
   Box,
+  Divider,
   Drawer,
   List,
   ListItem,
@@ -27,17 +28,17 @@ export default function NavBar({
       PaperProps={{ sx: { width: 240 } }}
     >
       <Box sx={{ textAlign: "center" }}>
-        <div className="py-6">
+        <div className="pt-6 mb-2">
           <p className=" text-lg font-bold italic">
             Emirael<span className="text-red-600">Dev</span>
           </p>
         </div>
-
+        <Divider />
         <List>
           {navList.map((list) => (
             <ListItem key={list.id} sx={{ textAlign: "center" }}>
               <Tooltip title={list.name}>
-                <ListItemText primary={list.name} />
+                <ListItemText id={`#${list.id}`} primary={list.name} />
               </Tooltip>
             </ListItem>
           ))}

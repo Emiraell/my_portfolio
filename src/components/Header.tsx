@@ -21,22 +21,31 @@ export default function Header() {
   const [drawerOpen, setDrawerOpen] = useState<boolean>(false);
   return (
     <>
-      <AppBar component="nav">
-        <Toolbar sx={{ display: "flex", justifyContent: "space-between" }}>
+      <AppBar component="nav" elevation={0}>
+        <Toolbar
+          sx={{
+            display: "flex",
+            justifyContent: "space-between",
+            bgcolor: "rgb(249 250 251)",
+            py: { md: 3, xs: 1 },
+          }}
+        >
           <div>
-            <p className=" text-lg font-bold italic">
+            <p className=" text-lg font-bold italic text-blue-500">
               Emirael<span className="text-red-600">Dev</span>
             </p>
           </div>
           <Box sx={{ display: { xs: "none", md: "block" } }}>
             {navList.map((list) => (
               <Tooltip title={list.name} key={list.id}>
-                <Button sx={{ color: "red" }}>{list.name}</Button>
+                <Button id={`#${list.id}`} color="primary">
+                  {list.name}
+                </Button>
               </Tooltip>
             ))}
           </Box>
           <IconButton
-            color="inherit"
+            color="primary"
             size="large"
             onClick={() => setDrawerOpen(!drawerOpen)}
             sx={{ display: { md: "none" } }}
