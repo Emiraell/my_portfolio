@@ -30,13 +30,13 @@ export default function About() {
           />
         </motion.div>
         <motion.div className=" md:w-[40vw]">
-          <p className="text-blue-600 uppercase">About me</p>
+          <p className="text-blue-600 uppercase font-bold">About me</p>
           <p className=" text-gray-700 pt-5 text-start px-10 ">
-            Hi, my name is Emmanuel, and I'm a Frontend Developer. My passion
-            and daily goal is to create and develop a clean user interface for
-            my users while maintaining a clean code. I have adequate and strong
-            knowledge in react.js, which is currently my main stack in
-            combination with Tailwind CSS and TypeScript.
+            Hello, my name is Emmanuel and I am a Frontend Developer. My passion
+            and daily goal is to design and develop a clean user interface for
+            my users while maintaining clean code. I have adequate and strong
+            knowledge of react.js, which is currently my primary stack, along
+            with Tailwind CSS and TypeScript.
           </p>
         </motion.div>
       </div>

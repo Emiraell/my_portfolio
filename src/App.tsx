@@ -3,6 +3,7 @@ import "./App.css";
 import Hero from "./components/Hero";
 import Main from "./pages/Main";
 import About from "./components/About";
+import TechStack from "./components/TechStack";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Divider />
       <Hero />
       <About />
+      <TechStack />
     </div>
   );
 }
