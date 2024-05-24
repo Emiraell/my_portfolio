@@ -10,3 +10,17 @@
 .container {
   @apply absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%];
 }
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(207, 202, 202);
+}
+
+::-webkit-scrollbar-thumb {
+  border: 0;
+  border-radius: 0px;
+  background-color: rgb(100, 95, 95);
+}
