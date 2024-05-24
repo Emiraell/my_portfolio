@@ -12,7 +12,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 export default function Header() {
   const navList: { name: string; id: string }[] = [
-    { name: "Home", id: "home" },
+    { name: "Home", id: "hero" },
     { name: "About", id: "about" },
     { name: "Project", id: "project" },
     { name: "Contact", id: "contact" },
@@ -21,7 +21,7 @@ export default function Header() {
   const [drawerOpen, setDrawerOpen] = useState<boolean>(false);
   return (
     <>
-      <AppBar component="nav" elevation={0}>
+      <AppBar component="nav" elevation={0} id="home">
         <Toolbar
           sx={{
             display: "flex",
@@ -37,11 +37,11 @@ export default function Header() {
           </div>
           <Box sx={{ display: { xs: "none", md: "block" } }}>
             {navList.map((list) => (
-              <Tooltip title={list.name} key={list.id}>
-                <Button id={`#${list.id}`} color="primary">
-                  {list.name}
-                </Button>
-              </Tooltip>
+              <a href={`#${list.id}`} key={list.id}>
+                <Tooltip title={list.name} key={list.id}>
+                  <Button color="primary">{list.name}</Button>
+                </Tooltip>
+              </a>
             ))}
           </Box>
           <IconButton

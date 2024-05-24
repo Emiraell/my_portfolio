@@ -6,7 +6,7 @@ import emirael from "../assets/emirael.jpg";
 export default function Hero() {
   return (
     <div
-      id="home"
+      id="hero"
       className="text-lg font-roboto bg-gradient-to-t from-blue-50
 		 to-gray-50 h-[100vh] text-center tracking-wider"
     >

@@ -37,9 +37,11 @@ export default function NavBar({
         <List>
           {navList.map((list) => (
             <ListItem key={list.id} sx={{ textAlign: "center" }}>
-              <Tooltip title={list.name}>
-                <ListItemText id={`#${list.id}`} primary={list.name} />
-              </Tooltip>
+              <a href={`#${list.id}`}>
+                <Tooltip title={list.name}>
+                  <ListItemText id={`#${list.id}`} primary={list.name} />
+                </Tooltip>
+              </a>
             </ListItem>
           ))}
         </List>
