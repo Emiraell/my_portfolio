@@ -10,7 +10,7 @@ export default function Contact() {
       </div>
       <div className=" lg:flex justify-around  items-center">
         <div className="">
-          <p className=" font-semibold text-2xl hidden lg:block pb-6 italic text-blue-400 ">
+          <p className=" font-semibold text-lg md:text-xl  lg:block pb-6 italic text-blue-400 ">
             let's work together
           </p>
           <div className=" text-start mx-10 md:mx-0">

@@ -28,19 +28,22 @@ export default function About() {
           />
         </motion.div>
         <motion.div className=" md:w-[40vw]">
-          <p className="text-blue-600 uppercase font-bold">About me</p>
-          <motion.p
-            className=" text-gray-700 pt-5 text-start px-10 "
+          <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 100 }}
             transition={{ delay: 1, duration: 0.5 }}
           >
-            Hello, my name is Emmanuel and I am a Frontend Developer. My passion
-            and daily goal is to design and develop a clean user interface for
-            my users while maintaining clean code. I have adequate and strong
-            knowledge of react.js, which is currently my primary stack, along
-            with Tailwind CSS and TypeScript.
-          </motion.p>
+            <p className="text-blue-600 uppercase font-bold underline">
+              About me
+            </p>
+            <p className=" text-gray-700 pt-5 text-start px-10 ">
+              Hello, my name is Emmanuel and I am a Frontend Developer. My
+              passion and daily goal is to design and develop a clean user
+              interface for my users while maintaining clean code. I have
+              adequate and strong knowledge of react.js, which is currently my
+              primary stack, along with Tailwind CSS and TypeScript.
+            </p>
+          </motion.div>
         </motion.div>
       </div>
     </div>

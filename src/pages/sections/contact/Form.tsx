@@ -1,6 +1,7 @@
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";
+import emailjs from "@emailjs/browser";
 
 export default function ContactForm() {
   const schema = yup.object().shape({
@@ -11,17 +12,34 @@ export default function ContactForm() {
   const {
     register,
     handleSubmit,
+    reset,
     formState: { errors },
   } = useForm({ resolver: yupResolver(schema) });
 
   const submit = (data: any) => {
-    console.log(data);
+    const serviceId = "service_s6ehvor";
+    const my_key = import.meta.env.VITE_MY_KEY;
+    const templateId = "template_y8pnh98";
+
+    const messageParams = {
+      ...data,
+    };
+
+    emailjs
+      .send(serviceId, templateId, messageParams, my_key)
+      .then((res) => {
+        reset();
+      })
+      .catch((err) => {
+        console.log("error in sending", err);
+      });
   };
   return (
     <form
-      className="flex-col gap-4 w-96 hidden lg:flex"
+      className="flex-col gap-4 w-[90%] lg:w-96 m-auto lg:flex"
       onSubmit={handleSubmit(submit)}
     >
+      <p className="text-lg mt-10 font-bold lg:hidden">Get in touch</p>
       <div className="relative mt-4">
         <input
           type="text"
@@ -56,7 +74,10 @@ export default function ContactForm() {
           {errors.message?.message}
         </p>
       </div>
-      <button className=" bg-orange-500 py-2 rounded-md" type="submit">
+      <button
+        className=" bg-orange-500 py-2 rounded-md w-full mt-2"
+        type="submit"
+      >
         Send
       </button>
     </form>
