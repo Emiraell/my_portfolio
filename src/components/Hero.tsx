@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <div
       id="hero"
-      className="text-lg font-roboto bg-gradient-to-t from-blue-50
+      className="text-lg font-roboto bg-gradient-to-t from-gray-50
 		 to-gray-50 h-[100vh] text-center tracking-wider"
     >
       <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
@@ -21,7 +21,7 @@ export default function Hero() {
             >
               <p className=" text-2xl">
                 Hi, I'm
-                <span className=" tracking-normal py-1 font-bold text-4xl md:text-5xl lg:text-6xl text-blue-500 block">
+                <span className=" tracking-normal py-1 text-nowrap font-bold text-4xl md:text-5xl lg:text-6xl text-blue-600 block">
                   Edwin Emmanuel
                 </span>
               </p>
@@ -40,7 +40,7 @@ export default function Hero() {
                 onClick={() =>
                   window.open("https://github.com/Emiraell", "_blank")
                 }
-                sx={{ ":hover": { color: "black" } }}
+                sx={{ ":hover": { opacity: 0.9 }, color: "black" }}
               >
                 <GitHubIcon fontSize="large" />
               </IconButton>
@@ -48,10 +48,9 @@ export default function Hero() {
                 onClick={() =>
                   window.open("https://linkedin.com/in/emirael", "_blank")
                 }
-                // sx={{ bgcolor: "blue" }}
               >
                 <LinkedInIcon
-                  sx={{ ":hover": { color: "blue" } }}
+                  sx={{ ":hover": { opacity: 0.7 }, color: "blue" }}
                   fontSize="large"
                 />
               </IconButton>

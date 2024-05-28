@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className="text-center py-5" id="contact bg-gray-50">
+    <div className="text-center py-20" id="contact bg-gray-50">
       <div>
         <p className="text-blue-600 uppercase font-bold underline text-lg pb-6">
           Contact
@@ -13,15 +13,15 @@ export default function Contact() {
           </p>
           <div className=" text-start mx-10 md:mx-0">
             <div>
-              <p className=" font-semibold text-lg">Mail</p>
+              <p className=" font-semibold text-lg text-gray-800">Mail</p>
               <span>emmzex19@gmail.com</span>
             </div>
             <div className="py-3">
-              <p className=" font-semibold text-lg">Address</p>
+              <p className=" font-semibold text-lg text-gray-800">Address</p>
               <span>Abuja, Nigeria</span>
             </div>
             <div>
-              <p className=" font-semibold text-lg">Phone</p>
+              <p className=" font-semibold text-lg text-gray-800">Phone</p>
               <span>+2348136553986</span>
             </div>
           </div>

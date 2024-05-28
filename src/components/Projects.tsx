@@ -20,7 +20,7 @@ export default function Projects() {
       github: "https://github.com/Emiraell/ecommerce_web_store",
       demo: "https://emiraell.github.io/ecommerce_web_store/",
       about:
-        "Messi is an Argentine professional footballer who plays as a forward for and captains both Major League Soccer club Inter Miami and the",
+        "An ecommerce project built with React as the primary stack. This website includes many features, such as product sorting, adding items to cart, viewing product information, and so on. The products for this project were extracted from the fake product API.",
     },
     {
       image: movie,
@@ -28,7 +28,7 @@ export default function Projects() {
       github: "https://github.com/Emiraell/movie_info_rating_app",
       demo: "https://emiraell.github.io/movie_info_rating_app/",
       about:
-        "Messi is an Argentine professional footballer who plays as a forward for and captains both Major League Soccer club Inter Miami and the",
+        "This website allows users to search for and obtain vital information about any movie of their choice, as well as rate the movie. This project was built using react as the main stack, and the movies were obtained from The Movie Database (TMDB).",
     },
     {
       image: todo,
@@ -36,7 +36,7 @@ export default function Projects() {
       github: "https://github.com/Emiraell/advanced_todolist_app",
       demo: "https://emiraell.github.io/advanced_todolist_app/",
       about:
-        "Messi is an Argentine professional footballer who plays as a forward for and captains both Major League Soccer club Inter Miami and the",
+        "An advanced todolist project was created using react as the main stack. This project also allows the user to add and remove tasks/events. This project also includes the completed task/event functionality.",
     },
     {
       image: church,
@@ -44,7 +44,7 @@ export default function Projects() {
       github: "https://github.com/Emiraell/my-church-web",
       demo: "https://emiraell.github.io/my-church-web/",
       about:
-        "Messi is an Argentine professional footballer who plays as a forward for and captains both Major League Soccer club Inter Miami and the",
+        "My church website project, which was primarily built using React. This website provides multi-page functionality and allows users to navigate them freely.",
     },
     {
       image: social_media,
@@ -52,11 +52,11 @@ export default function Projects() {
       github: "https://github.com/Emiraell/social-media",
       demo: "https://emiraell.github.io/social-media/",
       about:
-        "Messi is an Argentine professional footballer who plays as a forward for and captains both Major League Soccer club Inter Miami and the",
+        "A mini social media project built with react as the main stack. This project gives users the ability to create, like, delete, and comment on posts. Firebase served as the project's database.",
     },
   ];
   return (
-    <div className="pt-10 text-center text-lg" id="project">
+    <div className="py-20 text-center text-lg bg-blue-50" id="project">
       <p className="text-blue-600 uppercase font-bold underline">Projects</p>
       <div>
         <ProjectSlider projects={projects} />

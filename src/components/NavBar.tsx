@@ -25,18 +25,18 @@ export default function NavBar({
       onClose={() => setDrawerOpen(false)}
       sx={{ display: { md: "none" } }}
       ModalProps={{ keepMounted: true }}
-      PaperProps={{ sx: { width: 240 } }}
+      PaperProps={{ sx: { width: { xs: 240, sm: 400 } } }}
     >
-      <Box sx={{ textAlign: "center" }}>
+      <Box sx={{ mx: "auto" }}>
         <div className="pt-6 mb-2">
           <p className=" text-lg font-bold italic text-blue-500">
             Emirael<span className="text-gray-800">Dev</span>
           </p>
         </div>
         <Divider />
-        <List>
+        <List sx={{ textAlign: "center" }}>
           {navList.map((list) => (
-            <ListItem key={list.id} sx={{ textAlign: "center" }}>
+            <ListItem key={list.id}>
               <a href={`#${list.id}`}>
                 <Tooltip title={list.name}>
                   <ListItemText id={`#${list.id}`} primary={list.name} />

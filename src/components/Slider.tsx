@@ -6,8 +6,7 @@ interface SliderProps {
 }
 export default function ProjectSlider({ projects }: SliderProps) {
   return (
-    <div className="mx-4 my-10 ">
-      {/* <Slider {...settings}> */}
+    <div className="mx-4 my-5 ">
       {projects?.map((project: Project) => (
         <div
           key={project.title}
@@ -41,12 +40,14 @@ export default function ProjectSlider({ projects }: SliderProps) {
                 className="hover:bg-emerald-600"
                 onClick={() => window.open(`${project.demo}`, "_blank")}
                 size="small"
+                sx={{ ":hover": { bgcolor: "blue", color: "white" } }}
               >
                 Live Demo
               </Button>
               <Button
                 onClick={() => window.open(`${project.github}`, "_blank")}
                 size="small"
+                sx={{ ":hover": { bgcolor: "blue", color: "white" } }}
               >
                 Github
               </Button>
@@ -54,7 +55,6 @@ export default function ProjectSlider({ projects }: SliderProps) {
           </div>
         </div>
       ))}
-      {/* </Slider> */}
     </div>
   );
 }

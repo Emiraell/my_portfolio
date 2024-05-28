@@ -20,11 +20,11 @@ export default function TechStack() {
     { name: "material ui", icon: mui, level: "Intermediate" },
   ];
   return (
-    <div id="stack" className=" bg-gray-50 pt-20 text-center pb-10 text-lg">
+    <div id="stack" className=" bg-gray-50 py-20 text-center pb-10">
       <p className="text-blue-600 uppercase font-bold  pb-5"> Tech Stacks</p>
       <div
-        className="h-[40vh] border border-gray-400 m-auto md:w-[70vw] w-[90%]
-      bg-gray-50 rounded-xl overflow-scroll flex flex-col md:flex-row md:justify-around"
+        className="h-44 border border-gray-300 m-auto md:w-[70vw] w-[90%]
+      bg-gray-50 rounded-xl overflow-y-scroll flex flex-col md:flex-row md:justify-around"
       >
         <div>
           {stacks.slice(0, 4).map((stack) => (
