@@ -1,11 +1,11 @@
-import ts from "../assets/stacks/typescript.svg";
-import js from "../assets/stacks/javascript.svg";
-import git from "../assets/stacks/git.svg";
-import html from "../assets/stacks/html.svg";
-import css from "../assets/stacks/css.svg";
-import mui from "../assets/stacks/material-ui.svg";
-import react from "../assets/stacks/react.svg";
-import tailwind from "../assets/stacks/tailwind.svg";
+import ts from "../../../assets/stacks/typescript.svg";
+import js from "../../../assets/stacks/javascript.svg";
+import git from "../../../assets/stacks/git.svg";
+import html from "../../../assets/stacks/html.svg";
+import css from "../../../assets/stacks/css.svg";
+import mui from "../../../assets/stacks/material-ui.svg";
+import react from "../../../assets/stacks/react.svg";
+import tailwind from "../../../assets/stacks/tailwind.svg";
 import StackTemplate from "./StackTemplate";
 
 export default function TechStack() {

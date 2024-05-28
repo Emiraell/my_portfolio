@@ -2,7 +2,7 @@ import { IconButton } from "@mui/material";
 import { motion } from "framer-motion";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import emirael from "../assets/emirael.jpg";
+import emirael from "../../assets/emirael.jpg";
 export default function Hero() {
   return (
     <div
