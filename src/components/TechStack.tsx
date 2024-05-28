@@ -20,7 +20,7 @@ export default function TechStack() {
     { name: "material ui", icon: mui, level: "Intermediate" },
   ];
   return (
-    <div id="stack" className=" bg-blue-50 pt-20 text-center pb-10 text-lg">
+    <div id="stack" className=" bg-gray-50 pt-20 text-center pb-10 text-lg">
       <p className="text-blue-600 uppercase font-bold  pb-5"> Tech Stacks</p>
       <div
         className="h-[40vh] border border-gray-400 m-auto md:w-[70vw] w-[90%]

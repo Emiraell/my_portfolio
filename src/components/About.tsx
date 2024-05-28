@@ -3,11 +3,7 @@ import photo from "../assets/code_image.png";
 
 export default function About() {
   return (
-    <div
-      id="about"
-      className="text-lg font-roboto bg-gray-50
-      text-center tracking-wider pt-10"
-    >
+    <div id="about" className="text-lg text-center tracking-wider py-10">
       <motion.p
         className="mb-10 shadow-sm font-rochester text-3xl border-b-2 w-fit m-auto pb-1"
         initial={{ opacity: 0 }}

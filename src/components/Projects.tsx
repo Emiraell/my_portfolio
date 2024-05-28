@@ -56,7 +56,7 @@ export default function Projects() {
     },
   ];
   return (
-    <div className=" bg-gray-50 pt-10 text-center text-lg" id="project">
+    <div className="pt-10 text-center text-lg" id="project">
       <p className="text-blue-600 uppercase font-bold underline">Projects</p>
       <div>
         <ProjectSlider projects={projects} />

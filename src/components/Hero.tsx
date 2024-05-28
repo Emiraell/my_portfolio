@@ -11,7 +11,7 @@ export default function Hero() {
 		 to-gray-50 h-[100vh] text-center tracking-wider"
     >
       <div className="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-        <div className="flex gap-14 flex-col md:flex-row items-center">
+        <div className="flex gap-16 flex-col lg:flex-row items-center">
           <div>
             <motion.div
               initial={{ opacity: 0 }}
@@ -19,13 +19,13 @@ export default function Hero() {
               transition={{ delay: 1, duration: 1 }}
               viewport={{ once: true }}
             >
-              <p>
+              <p className=" text-2xl">
                 Hi, I'm
-                <span className=" tracking-normal py-1 font-bold text-2xl md:text-3xl text-purple-600 block">
+                <span className=" tracking-normal py-1 font-bold text-4xl md:text-5xl lg:text-6xl text-blue-500 block">
                   Edwin Emmanuel
                 </span>
               </p>
-              <p className=" font-semibold text-gray-600 text-xl">
+              <p className=" font-semibold text-gray-600 text-3xl md:text-4xl">
                 Frontend Developer
               </p>
             </motion.div>
@@ -40,6 +40,7 @@ export default function Hero() {
                 onClick={() =>
                   window.open("https://github.com/Emiraell", "_blank")
                 }
+                sx={{ ":hover": { color: "black" } }}
               >
                 <GitHubIcon fontSize="large" />
               </IconButton>
@@ -47,12 +48,16 @@ export default function Hero() {
                 onClick={() =>
                   window.open("https://linkedin.com/in/emirael", "_blank")
                 }
+                // sx={{ bgcolor: "blue" }}
               >
-                <LinkedInIcon fontSize="large" />
+                <LinkedInIcon
+                  sx={{ ":hover": { color: "blue" } }}
+                  fontSize="large"
+                />
               </IconButton>
             </motion.div>
           </div>
-          <div className="w-48">
+          <div className=" w-72 md:w-80">
             <motion.img
               className=" object-contain rounded-full"
               initial={{ opacity: 0, y: 300 }}
@@ -62,6 +67,25 @@ export default function Hero() {
               src={emirael}
               alt="emirael_dev photo"
             />
+          </div>
+          <div className=" overflow-hidden absolute text-4xl lg:text-7xl md:text-5xl -bottom-32 text-nowrap text-blue-100 font-bold">
+            <motion.p
+              className="uppercase"
+              initial={{ x: "90%", opacity: 0 }}
+              whileInView={{ opacity: 100 }}
+              transition={{ delay: 3.5 }}
+              animate={{
+                x: "-105%",
+                transition: {
+                  repeat: Infinity,
+                  duration: 16,
+                  repeatType: "mirror",
+                  delay: 3,
+                },
+              }}
+            >
+              Front end developer
+            </motion.p>
           </div>
         </div>
       </div>

@@ -32,7 +32,7 @@ export default function Header() {
         >
           <div>
             <p className=" text-lg font-bold italic text-blue-500">
-              Emirael<span className="text-red-600">Dev</span>
+              Emirael<span className="text-gray-700">Dev</span>
             </p>
           </div>
           <Box sx={{ display: { xs: "none", md: "block" } }}>

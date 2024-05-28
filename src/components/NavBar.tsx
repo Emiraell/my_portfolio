@@ -29,8 +29,8 @@ export default function NavBar({
     >
       <Box sx={{ textAlign: "center" }}>
         <div className="pt-6 mb-2">
-          <p className=" text-lg font-bold italic">
-            Emirael<span className="text-red-600">Dev</span>
+          <p className=" text-lg font-bold italic text-blue-500">
+            Emirael<span className="text-gray-800">Dev</span>
           </p>
         </div>
         <Divider />
