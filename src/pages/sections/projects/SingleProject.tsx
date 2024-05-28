@@ -5,7 +5,7 @@ import { Button, ButtonGroup, Typography } from "@mui/material";
 interface SliderProps {
   projects: Project[];
 }
-export default function ProjectSlider({ projects }: SliderProps) {
+export default function SingleProject({ projects }: SliderProps) {
   return (
     <div className="mx-4 my-5 ">
       {projects?.map((project: Project) => (

@@ -7,7 +7,7 @@ export default function ContactForm() {
   const schema = yup.object().shape({
     name: yup.string().min(3).max(20).required(),
     email: yup.string().email().required(),
-    message: yup.string().min(10).max(100).required(),
+    message: yup.string().min(3).max(100).required(),
   });
   const {
     register,
@@ -27,18 +27,16 @@ export default function ContactForm() {
 
     emailjs
       .send(serviceId, templateId, messageParams, my_key)
-      .then((res) => {
+      .then(() => {
         reset();
+        alert(`Message sent successfully`);
       })
-      .catch((err) => {
-        console.log("error in sending", err);
+      .catch(() => {
+        alert(`unable to send message, please try again`);
       });
   };
   return (
-    <form
-      className="flex-col gap-4 w-[90%] lg:w-96 m-auto lg:flex"
-      onSubmit={handleSubmit(submit)}
-    >
+    <form onSubmit={handleSubmit(submit)}>
       <p className="text-lg mt-10 font-bold lg:hidden">Get in touch</p>
       <div className="relative mt-4">
         <input

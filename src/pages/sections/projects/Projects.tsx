@@ -3,7 +3,7 @@ import todo from "../../../assets/projects/todo_image.png";
 import e_commerce from "../../../assets/projects/e_commerce_image.png";
 import church from "../../../assets/projects/church_image.png";
 import movie from "../../../assets/projects/movie_image.png";
-import ProjectSlider from "./Slider";
+import SingleProject from "./SingleProject";
 
 export interface Project {
   title: string;
@@ -59,7 +59,7 @@ export default function Projects() {
     <div className="py-20 text-center text-lg bg-blue-50" id="project">
       <p className="text-blue-600 uppercase font-bold underline">Projects</p>
       <div>
-        <ProjectSlider projects={projects} />
+        <SingleProject projects={projects} />
       </div>
     </div>
   );
