@@ -2,6 +2,7 @@ import ContactForm from "./Form";
 
 export default function Contact() {
   return (
+    // contact details
     <div
       className="text-center py-20 lg:w-96 m-auto lg:m-0 md:w-[70%] w-[90%]"
       id="contact bg-gray-50"
@@ -31,6 +32,8 @@ export default function Contact() {
             </div>
           </div>
         </div>
+
+        {/* message form */}
         <ContactForm />
       </div>
     </div>

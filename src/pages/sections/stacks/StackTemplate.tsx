@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 
+// received stack props
 interface StackProps {
   stack: { name: string; icon: string; level: string };
 }

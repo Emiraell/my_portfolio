@@ -10,6 +10,7 @@ import Footer from "../components/Footer";
 export default function Main() {
   return (
     <div>
+      {/* all page sections */}
       <Header />
       <Toolbar />
       <Divider />

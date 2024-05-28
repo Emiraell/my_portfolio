@@ -5,6 +5,7 @@ import church from "../../../assets/projects/church_image.png";
 import movie from "../../../assets/projects/movie_image.png";
 import SingleProject from "./SingleProject";
 
+// project data interface
 export interface Project {
   title: string;
   image: string;
@@ -13,6 +14,7 @@ export interface Project {
   github: string;
 }
 export default function Projects() {
+  // projects
   const projects: Project[] = [
     {
       image: e_commerce,
@@ -58,8 +60,11 @@ export default function Projects() {
   return (
     <div className="py-20 text-center text-lg bg-blue-50" id="project">
       <p className="text-blue-600 uppercase font-bold underline">Projects</p>
-      <div>
-        <SingleProject projects={projects} />
+      <div className="mx-4 my-5">
+        {/* project listing */}
+        {projects.map((project: Project) => (
+          <SingleProject project={project} key={project.title} />
+        ))}
       </div>
     </div>
   );

@@ -9,6 +9,7 @@ import tailwind from "../../../assets/stacks/tailwind.svg";
 import StackTemplate from "./StackTemplate";
 
 export default function TechStack() {
+  // tech stacks list
   const stacks: { name: string; icon: string; level: string }[] = [
     { name: "html", icon: html, level: "Experienced" },
     { name: "css", icon: css, level: "Experienced" },
@@ -27,11 +28,13 @@ export default function TechStack() {
       bg-gray-50 rounded-xl overflow-y-scroll flex flex-col md:flex-row md:justify-around"
       >
         <div>
+          {/* first four stack display */}
           {stacks.slice(0, 4).map((stack) => (
             <StackTemplate stack={stack} key={stack.name} />
           ))}
         </div>
         <div>
+          {/* last four stack display */}
           {stacks.slice(4, 8).map((stack) => (
             <StackTemplate stack={stack} key={stack.name} />
           ))}

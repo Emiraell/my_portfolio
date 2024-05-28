@@ -16,6 +16,7 @@ export default function About() {
       >
         More about Edwin
       </motion.p>
+
       <div className="flex flex-col md:flex-row gap-10 justify-center items-center">
         <motion.div className="h-[50vh]">
           <motion.img
@@ -27,6 +28,7 @@ export default function About() {
             className=" object-cover rounded-xl h-full"
           />
         </motion.div>
+
         <motion.div className=" md:w-[40vw]">
           <motion.div
             initial={{ opacity: 0 }}
@@ -36,6 +38,8 @@ export default function About() {
             <p className="text-blue-600 uppercase font-bold underline">
               About me
             </p>
+
+            {/* about */}
             <p className=" text-gray-700 pt-5 text-start px-10 ">
               Hello, my name is Emmanuel and I am a Frontend Developer. My
               passion and daily goal is to design and develop a clean user

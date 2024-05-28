@@ -11,6 +11,7 @@ import { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 
 export default function Header() {
+  // page section list
   const navList: { name: string; id: string }[] = [
     { name: "Home", id: "hero" },
     { name: "About", id: "about" },
@@ -18,6 +19,7 @@ export default function Header() {
     { name: "Contact", id: "contact" },
   ];
 
+  // open side bar/drawer state
   const [drawerOpen, setDrawerOpen] = useState<boolean>(false);
   return (
     <>
@@ -54,6 +56,8 @@ export default function Header() {
           </IconButton>
         </Toolbar>
       </AppBar>
+
+      {/* side bar */}
       <NavBar
         navList={navList}
         drawerOpen={drawerOpen}

@@ -29,6 +29,7 @@ export default function Hero() {
                 Frontend Developer
               </p>
             </motion.div>
+
             <motion.div
               className="pt-2"
               initial={{ opacity: 0, y: 300 }}
@@ -36,6 +37,7 @@ export default function Hero() {
               transition={{ delay: 1.5, duration: 0.5 }}
               viewport={{ once: true }}
             >
+              {/* github link and icon */}
               <IconButton
                 onClick={() =>
                   window.open("https://github.com/Emiraell", "_blank")
@@ -44,6 +46,8 @@ export default function Hero() {
               >
                 <GitHubIcon fontSize="large" />
               </IconButton>
+
+              {/* linkedin link and icon */}
               <IconButton
                 onClick={() =>
                   window.open("https://linkedin.com/in/emirael", "_blank")
@@ -56,6 +60,8 @@ export default function Hero() {
               </IconButton>
             </motion.div>
           </div>
+
+          {/* image */}
           <div className=" w-72 md:w-80">
             <motion.img
               className=" object-contain rounded-full"
@@ -67,6 +73,8 @@ export default function Hero() {
               alt="emirael_dev photo"
             />
           </div>
+
+          {/* scrolling front end text */}
           <div className=" overflow-hidden absolute text-4xl lg:text-7xl md:text-5xl -bottom-32 text-nowrap text-blue-100 font-bold">
             <motion.p
               className="uppercase"

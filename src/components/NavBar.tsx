@@ -9,11 +9,14 @@ import {
 } from "@mui/material";
 import { Dispatch, SetStateAction } from "react";
 
+// props type
 type NavProps = {
   navList: { name: string; id: string }[];
   drawerOpen: boolean;
   setDrawerOpen: Dispatch<SetStateAction<boolean>>;
 };
+
+// side bar
 export default function NavBar({
   navList,
   drawerOpen,
