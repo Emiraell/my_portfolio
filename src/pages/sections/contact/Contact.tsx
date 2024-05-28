@@ -1,3 +1,5 @@
+import ContactForm from "./Form";
+
 export default function Contact() {
   return (
     <div className="text-center py-20" id="contact bg-gray-50">
@@ -26,26 +28,7 @@ export default function Contact() {
             </div>
           </div>
         </div>
-        <form className="flex-col gap-4 w-96 hidden lg:flex">
-          <input
-            type="text"
-            placeholder="Name"
-            className=" rounded-md outline-none bg-gray-200 p-2"
-          />
-          <input
-            type="text"
-            placeholder="Email"
-            className=" rounded-md outline-none bg-gray-200 p-2"
-          />
-          <textarea
-            name=""
-            placeholder="Message"
-            className=" rounded-md outline-none bg-gray-200 p-2 h-32"
-          />
-          <button className=" bg-orange-500 py-2 rounded-md" type="submit">
-            Send
-          </button>
-        </form>
+        <ContactForm />
       </div>
     </div>
   );

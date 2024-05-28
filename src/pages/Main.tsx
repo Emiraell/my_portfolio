@@ -4,7 +4,7 @@ import Hero from "./sections/Hero";
 import About from "./sections/About";
 import TechStack from "./sections/stacks/TechStack";
 import Projects from "./sections/projects/Projects";
-import Contact from "./sections/Contact";
+import Contact from "./sections/contact/Contact";
 import Footer from "../components/Footer";
 
 export default function Main() {
