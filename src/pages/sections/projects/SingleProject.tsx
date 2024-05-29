@@ -5,8 +5,9 @@ import { Button, ButtonGroup, Typography } from "@mui/material";
 // received project props
 interface ProjectProps {
   project: Project;
+  odd: boolean;
 }
-export default function SingleProject({ project }: ProjectProps) {
+export default function SingleProject({ project, odd }: ProjectProps) {
   return (
     // single project
     <>
@@ -18,7 +19,7 @@ export default function SingleProject({ project }: ProjectProps) {
         key={project.title}
         className="lg:flex m-auto lg:w-[65%] gap-10 py-10 items-center md:w-[80%]"
       >
-        <div className="lg:w-[80%] h-[40vh] m-auto">
+        <div className={`lg:w-[80%] h-[40vh] m-auto lg:${odd && "hidden"}`}>
           <img
             src={project.image}
             alt=""
@@ -58,6 +59,13 @@ export default function SingleProject({ project }: ProjectProps) {
               Github
             </Button>
           </ButtonGroup>
+        </div>
+        <div className={`lg:w-[80%] h-[40vh] m-auto lg:${!odd && "hidden"}`}>
+          <img
+            src={project.image}
+            alt=""
+            className="object-fill h-full w-full rounded-xl"
+          />
         </div>
       </motion.div>
     </>

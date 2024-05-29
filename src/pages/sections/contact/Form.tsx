@@ -46,7 +46,7 @@ export default function ContactForm() {
       });
   };
   return (
-    <form onSubmit={handleSubmit(submit)}>
+    <form onSubmit={handleSubmit(submit)} className="w-96">
       <p className="text-lg mt-10 font-bold lg:hidden">Get in touch</p>
 
       {/* name feild */}
@@ -89,7 +89,8 @@ export default function ContactForm() {
 
       {/* send button */}
       <button
-        className=" bg-orange-500 py-2 rounded-md w-full mt-2"
+        className=" bg-orange-500 py-2 rounded-md w-full mt-2 hover:bg-gray-950
+         hover:text-orange-500 transition-all duration-200 ease-linear"
         type="submit"
       >
         Send

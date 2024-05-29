@@ -62,9 +62,13 @@ export default function Projects() {
       <p className="text-blue-600 uppercase font-bold underline">Projects</p>
       <div className="mx-4 my-5">
         {/* project listing */}
-        {projects.map((project: Project) => (
-          <SingleProject project={project} key={project.title} />
-        ))}
+        {projects.map((project: Project, index: number) =>
+          index === 1 || index === 3 ? (
+            <SingleProject project={project} key={project.title} odd={true} />
+          ) : (
+            <SingleProject project={project} odd={false} />
+          )
+        )}
       </div>
     </div>
   );
