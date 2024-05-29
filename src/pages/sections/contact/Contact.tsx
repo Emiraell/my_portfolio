@@ -19,15 +19,15 @@ export default function Contact() {
           </p>
           <div className="mx-10 md:mx-0">
             <div>
-              <p className=" font-semibold text-lg text-gray-800">Mail</p>
+              <p className="detail ">Mail</p>
               <span>emmzex19@gmail.com</span>
             </div>
             <div className="py-3">
-              <p className=" font-semibold text-lg text-gray-800">Address</p>
+              <p className="detail">Address</p>
               <span>Abuja, Nigeria</span>
             </div>
             <div>
-              <p className=" font-semibold text-lg text-gray-800">Phone</p>
+              <p className="detail">Phone</p>
               <span>+2348136553986</span>
             </div>
           </div>

@@ -54,12 +54,10 @@ export default function ContactForm() {
         <input
           type="text"
           placeholder="Name"
-          className=" w-full rounded-md outline-none bg-gray-200 p-2"
+          className="input"
           {...register("name")}
         />
-        <p className="text-red-600 absolute -top-6 right-0 text-sm">
-          {errors.name?.message}
-        </p>
+        <p className="error">{errors.name?.message}</p>
       </div>
 
       {/* email feild */}
@@ -67,24 +65,20 @@ export default function ContactForm() {
         <input
           type="text"
           placeholder="Email"
-          className=" rounded-md outline-none bg-gray-200 p-2 w-full"
+          className="input"
           {...register("email")}
         />
-        <p className="text-red-600 absolute -top-6 right-0 text-sm">
-          {errors.email?.message}
-        </p>
+        <p className="error">{errors.email?.message}</p>
       </div>
 
       {/* message feild */}
       <div className="relative mt-4">
         <textarea
           placeholder="Message"
-          className=" rounded-md outline-none bg-gray-200 p-2 h-32 w-full"
+          className="input h-32"
           {...register("message")}
         />
-        <p className="text-red-600 absolute -top-6 right-0 text-sm">
-          {errors.message?.message}
-        </p>
+        <p className="error">{errors.message?.message}</p>
       </div>
 
       {/* send button */}
