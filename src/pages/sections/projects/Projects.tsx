@@ -66,7 +66,7 @@ export default function Projects() {
           index === 1 || index === 3 ? (
             <SingleProject project={project} key={project.title} odd={true} />
           ) : (
-            <SingleProject project={project} odd={false} />
+            <SingleProject project={project} odd={false} key={project.title} />
           )
         )}
       </div>

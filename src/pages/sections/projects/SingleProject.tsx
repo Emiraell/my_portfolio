@@ -60,7 +60,9 @@ export default function SingleProject({ project, odd }: ProjectProps) {
             </Button>
           </ButtonGroup>
         </div>
-        <div className={`lg:w-[80%] h-[40vh] m-auto lg:${!odd && "hidden"}`}>
+        <div
+          className={`lg:w-[80%] h-[40vh] m-auto lg:${odd && "block"} hidden`}
+        >
           <img
             src={project.image}
             alt=""
