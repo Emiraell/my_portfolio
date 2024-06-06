@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 // received stack props
 interface StackProps {
-  stack: { name: string; icon: string; level: string };
+  stack: { name: string; icon: string };
 }
 export default function StackTemplate({ stack }: StackProps) {
   return (
@@ -13,7 +13,7 @@ export default function StackTemplate({ stack }: StackProps) {
       transition={{ duration: 0.8, ease: "easeInOut" }}
       viewport={{ once: true }}
     >
-      <div className="w-7 my-3 mx-3">
+      <div className="w-6 my-1 mx-3">
         <img
           src={stack.icon}
           alt={`${stack.name} photo`}
@@ -22,7 +22,6 @@ export default function StackTemplate({ stack }: StackProps) {
       </div>
       <div className=" text-start mx-3">
         <p className=" uppercase text-gray-800 font-bold">{stack.name}</p>
-        <p className=" text-gray-500">{stack.level}</p>
       </div>
     </motion.div>
   );

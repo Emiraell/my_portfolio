@@ -10,21 +10,21 @@ import StackTemplate from "./StackTemplate";
 
 export default function TechStack() {
   // tech stacks list
-  const stacks: { name: string; icon: string; level: string }[] = [
-    { name: "html", icon: html, level: "Experienced" },
-    { name: "css", icon: css, level: "Experienced" },
-    { name: "javascript", icon: js, level: "Experienced" },
-    { name: "react", icon: react, level: "Intermediate" },
-    { name: "typescript", icon: ts, level: "Intermediate" },
-    { name: "tailwind css", icon: tailwind, level: "Intermediate" },
-    { name: "Git", icon: git, level: "Intermediate" },
-    { name: "material ui", icon: mui, level: "Intermediate" },
+  const stacks: { name: string; icon: string }[] = [
+    { name: "html", icon: html },
+    { name: "css", icon: css },
+    { name: "javascript", icon: js },
+    { name: "react", icon: react },
+    { name: "typescript", icon: ts },
+    { name: "tailwind css", icon: tailwind },
+    { name: "Git", icon: git },
+    { name: "material ui", icon: mui },
   ];
   return (
     <div id="stack" className=" bg-gray-50 py-20 text-center pb-10">
       <p className="text-blue-600 uppercase font-bold  pb-5"> Tech Stacks</p>
       <div
-        className="h-44 border border-gray-300 m-auto md:w-[70vw] w-[90%]
+        className="h-36 border border-gray-300 m-auto md:w-[70vw] w-[90%]
       bg-gray-50 rounded-xl overflow-y-scroll flex flex-col md:flex-row md:justify-around"
       >
         <div>

@@ -2,7 +2,7 @@ import { IconButton } from "@mui/material";
 import { motion } from "framer-motion";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
-import emirael from "../../assets/emira.jpg";
+import emirael from "../../assets/emirae.jpg";
 export default function Hero() {
   return (
     <div
@@ -77,7 +77,7 @@ export default function Hero() {
           {/* scrolling front end text */}
           <div className=" overflow-hidden absolute text-4xl lg:text-7xl md:text-5xl -bottom-32 text-nowrap text-blue-100 font-bold">
             <motion.p
-              className="uppercase"
+              className="uppercase text-nowrap"
               initial={{ x: "90%", opacity: 0 }}
               whileInView={{ opacity: 100 }}
               transition={{ delay: 3.5 }}

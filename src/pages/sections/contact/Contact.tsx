@@ -4,8 +4,8 @@ export default function Contact() {
   return (
     // contact details
     <div
-      className="text-center py-20  m-auto md:w-[70%] w-[90%] lg:w-full"
-      id="contact bg-gray-50"
+      className="text-center py-20  m-auto md:w-[70%] w-[90%] lg:w-full bg-gray-50"
+      id="contact"
     >
       <div>
         <p className="text-blue-600 uppercase font-bold underline text-lg pb-6">
