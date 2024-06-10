@@ -20,7 +20,7 @@ export default function ContactForm() {
   } = useForm({ resolver: yupResolver(schema) });
 
   // submit/send message function
-  const submit = (data: any) => {
+  const submit = (data: { name: string; email: string; message: string }) => {
     // emailJs params
     const serviceId = "service_s6ehvor";
     const my_key = import.meta.env.VITE_MY_KEY;
@@ -28,7 +28,10 @@ export default function ContactForm() {
 
     // data to be sent to mail
     const messageParams = {
-      ...data,
+      from_name: data.name,
+      from_email: data.email,
+      to_name: "emirael",
+      message: data.message,
     };
 
     // send message
