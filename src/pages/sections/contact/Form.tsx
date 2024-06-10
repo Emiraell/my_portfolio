@@ -22,12 +22,12 @@ export default function ContactForm() {
   // submit/send message function
   const submit = (data: { name: string; email: string; message: string }) => {
     // emailJs params
-    const serviceId = "service_s6ehvor";
-    const my_key = import.meta.env.VITE_MY_KEY;
-    const templateId = "template_y8pnh98";
+    const serviceID = "service_s6ehvor";
+    const publicKey = import.meta.env.VITE_MY_KEY;
+    const templateID = "template_y8pnh98";
 
     // data to be sent to mail
-    const messageParams = {
+    const templateParams = {
       from_name: data.name,
       from_email: data.email,
       to_name: "emirael",
@@ -36,7 +36,7 @@ export default function ContactForm() {
 
     // send message
     emailjs
-      .send(serviceId, templateId, messageParams, my_key)
+      .send(serviceID, templateID, templateParams, publicKey)
       .then(() => {
         // alert on success and clear input feild
         reset();
